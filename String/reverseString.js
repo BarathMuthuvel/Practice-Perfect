@@ -1,13 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function reverseString(str) {
-    var reversedStr = '';
+    var reversedStr = "";
     for (var i = str.length - 1; i >= 0; i--) {
         reversedStr += str[i];
     }
     return reversedStr;
 }
 console.log(reverseString("hello"));
+function reverseStrMethod(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseStrMethod("Barath"));
 function runTests() {
     var input = "hello";
     // Test with a non-empty string
